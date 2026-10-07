@@ -6,8 +6,8 @@ import { REVIEWS, SITE } from "@/lib/constants";
 
 export function ReviewsSection() {
   return (
-    <section className="bg-white py-24 md:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <section className="bg-white py-16 sm:py-20 md:py-32">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Avaliações"
           title="Quem cuida, recomenda"
@@ -18,7 +18,7 @@ export function ReviewsSection() {
         <StaggerChildren className="grid gap-6 md:grid-cols-3">
           {REVIEWS.map((review) => (
             <StaggerItem key={review.author}>
-              <blockquote className="flex h-full flex-col rounded-3xl border border-brand-green/10 bg-brand-cream p-8">
+              <blockquote className="flex h-full flex-col rounded-3xl border border-brand-green/10 bg-brand-cream p-6 sm:p-8">
                 <div className="mb-4 text-brand-orange">★★★★★</div>
                 <p className="flex-1 text-brand-charcoal/80 leading-relaxed">
                   &ldquo;{review.text}&rdquo;

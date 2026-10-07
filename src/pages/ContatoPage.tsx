@@ -5,13 +5,13 @@ import { SITE } from "@/lib/constants";
 export function ContatoPage() {
   return (
     <>
-      <section className="bg-brand-green py-24 pt-32 text-white md:py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <section className="bg-brand-green py-16 pt-28 text-white sm:py-20 sm:pt-32 md:py-32">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <span className="text-xs font-semibold uppercase tracking-[0.25em] text-white/70">
               Contato
             </span>
-            <h1 className="mt-3 text-5xl font-semibold md:text-6xl">
+            <h1 className="mt-3 text-3xl font-semibold sm:text-4xl md:text-6xl">
               Estamos por perto
             </h1>
             <p className="mt-4 max-w-lg text-lg text-white/80">
@@ -22,15 +22,15 @@ export function ContatoPage() {
         </div>
       </section>
 
-      <section className="py-24 md:py-32">
-        <div className="mx-auto grid max-w-7xl gap-12 px-6 lg:grid-cols-2 lg:px-8">
+      <section className="py-16 pb-24 sm:py-20 md:py-32 md:pb-32">
+        <div className="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
           <FadeIn>
             <div className="space-y-8">
               <div>
                 <h3 className="text-sm font-semibold uppercase tracking-wider text-brand-green">
                   Endereço
                 </h3>
-                <p className="mt-2 text-xl text-brand-charcoal">{SITE.fullAddress}</p>
+                <p className="mt-2 text-lg text-brand-charcoal sm:text-xl">{SITE.fullAddress}</p>
                 <Button
                   href={SITE.googleMaps}
                   external
@@ -103,7 +103,7 @@ export function ContatoPage() {
               <iframe
                 title="Localização Vet Center"
                 src="https://maps.google.com/maps?q=Rua+Fortaleza+1051+Presidente+Epitacio+SP&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                className="h-[400px] w-full border-0 md:h-[500px]"
+                className="h-[280px] w-full border-0 sm:h-[400px] md:h-[500px]"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               />

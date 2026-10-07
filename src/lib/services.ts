@@ -26,7 +26,7 @@ export const AMBIENTS = [
     title: "Clínica",
     subtitle: "Consultas e prevenção",
     image: "/images/clinica/consulta-estetoscopio.png",
-    span: "col-span-2 row-span-2",
+    span: "md:col-span-2 md:row-span-2",
     href: "/servicos/clinica",
   },
   {
@@ -34,7 +34,7 @@ export const AMBIENTS = [
     title: "Exames",
     subtitle: "Diagnóstico integrado",
     image: "/images/exames/raio-x-digital.png",
-    span: "col-span-2 row-span-1",
+    span: "md:col-span-2 md:row-span-1",
     href: "/servicos/exames",
   },
   {
@@ -42,7 +42,7 @@ export const AMBIENTS = [
     title: "Cirurgias",
     subtitle: "Centro cirúrgico",
     image: "/images/exames/raio-x-digital.png",
-    span: "col-span-1 row-span-1",
+    span: "md:col-span-1 md:row-span-1",
     href: "/servicos/cirurgias",
   },
   {
@@ -50,7 +50,7 @@ export const AMBIENTS = [
     title: "Banho e Tosa",
     subtitle: "Bem-estar e estética",
     image: "/images/clinica/consulta-estetoscopio.png",
-    span: "col-span-1 row-span-1",
+    span: "md:col-span-1 md:row-span-1",
     href: "/servicos/banho-e-tosa",
   },
   {
@@ -58,7 +58,7 @@ export const AMBIENTS = [
     title: "Pet Shop",
     subtitle: "Produtos e cuidados",
     image: "/images/team/equipe-fachada-8anos.png",
-    span: "col-span-1 row-span-1",
+    span: "md:col-span-1 md:row-span-1",
     href: "/servicos/pet-shop",
   },
   {
@@ -66,7 +66,7 @@ export const AMBIENTS = [
     title: "Estrutura",
     subtitle: "Nossa clínica",
     image: "/images/team/equipe-recepcao.png",
-    span: "col-span-1 row-span-1",
+    span: "md:col-span-1 md:row-span-1",
     href: "/estrutura",
   },
 ];

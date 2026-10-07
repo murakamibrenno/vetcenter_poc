@@ -13,20 +13,20 @@ export function EquipePage() {
           className="absolute inset-0 h-full w-full object-cover object-[center_35%]"
         />
         <div className="hero-gradient absolute inset-0" />
-        <div className="relative mx-auto flex min-h-[60vh] max-w-7xl flex-col justify-end px-6 pb-16 pt-32 lg:px-8">
+        <div className="relative mx-auto flex min-h-[60vh] max-w-7xl flex-col justify-end px-4 pb-14 pt-28 sm:px-6 sm:pb-16 sm:pt-32 lg:px-8">
           <FadeIn>
             <span className="text-xs font-semibold uppercase tracking-[0.25em] text-white/70">
               Nossa equipe
             </span>
-            <h1 className="mt-3 max-w-3xl text-5xl font-semibold text-white md:text-6xl">
+            <h1 className="mt-3 max-w-3xl text-3xl font-semibold text-white sm:text-4xl md:text-6xl">
               Conheça quem cuida do seu pet
             </h1>
           </FadeIn>
         </div>
       </section>
 
-      <section className="py-24 md:py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <section className="py-16 sm:py-20 md:py-32">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <FadeIn>
               <img
@@ -39,7 +39,7 @@ export function EquipePage() {
               <span className="inline-block rounded-full bg-brand-green/10 px-4 py-1.5 text-sm font-semibold text-brand-green">
                 {SITE.years} anos Vet Center
               </span>
-              <h2 className="mt-4 text-4xl font-semibold text-brand-charcoal md:text-5xl">
+              <h2 className="mt-4 text-3xl font-semibold text-brand-charcoal sm:text-4xl md:text-5xl">
                 Dr. Danilo Amaral e equipe
               </h2>
               <p className="mt-2 text-sm font-medium text-brand-green">
@@ -73,7 +73,7 @@ export function EquipePage() {
           <StaggerChildren className="grid gap-6 md:grid-cols-3">
             {REVIEWS.map((review) => (
               <StaggerItem key={review.author}>
-                <blockquote className="rounded-3xl bg-white p-8 shadow-sm">
+                <blockquote className="rounded-3xl bg-white p-6 shadow-sm sm:p-8">
                   <div className="mb-3 text-brand-orange">★★★★★</div>
                   <p className="text-brand-charcoal/80">&ldquo;{review.text}&rdquo;</p>
                   <footer className="mt-4 text-sm font-semibold text-brand-green">

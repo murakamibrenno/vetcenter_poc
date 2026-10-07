@@ -6,11 +6,11 @@ import { DIAGNOSTIC_BENEFITS } from "@/lib/constants";
 
 export function DiagnosticoIntegrado() {
   return (
-    <section className="relative overflow-hidden bg-brand-charcoal py-24 text-white grain-overlay md:py-32">
+    <section className="relative overflow-hidden bg-brand-charcoal py-16 text-white grain-overlay sm:py-20 md:py-32">
       <div className="absolute top-0 right-0 h-96 w-96 rounded-full bg-brand-green/20 blur-3xl" />
       <div className="absolute bottom-0 left-0 h-64 w-64 rounded-full bg-brand-red/10 blur-3xl" />
 
-      <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <div>
             <SectionHeading
@@ -36,7 +36,7 @@ export function DiagnosticoIntegrado() {
             </StaggerChildren>
 
             <FadeIn delay={0.3} className="mt-10">
-              <Button href="/servicos/exames" variant="primary" size="lg">
+              <Button href="/servicos/exames" variant="primary" size="lg" className="w-full sm:w-auto">
                 Conhecer exames e diagnóstico
               </Button>
             </FadeIn>

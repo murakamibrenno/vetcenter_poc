@@ -16,12 +16,12 @@ export function HomeHero() {
         <div className="hero-gradient absolute inset-0" />
       </div>
 
-      <div className="relative mx-auto w-full max-w-7xl px-6 pb-24 pt-40 lg:px-8 lg:pb-32">
+      <div className="relative mx-auto w-full max-w-7xl px-4 pb-20 pt-36 sm:px-6 sm:pb-24 sm:pt-40 lg:px-8 lg:pb-32">
         <motion.span
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.6 }}
-          className="mb-4 inline-block rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.25em] text-white/90 backdrop-blur-sm"
+          className="mb-4 inline-block max-w-full rounded-full border border-white/20 bg-white/10 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.12em] text-white/90 backdrop-blur-sm sm:px-4 sm:text-xs sm:tracking-[0.2em]"
         >
           {SITE.city} · {SITE.years} anos de cuidado
         </motion.span>
@@ -30,7 +30,7 @@ export function HomeHero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.7 }}
-          className="max-w-4xl text-balance text-5xl font-semibold leading-[1.05] text-white md:text-6xl lg:text-7xl"
+          className="max-w-4xl text-balance text-3xl font-semibold leading-[1.08] text-white sm:text-4xl md:text-5xl lg:text-7xl"
         >
           Onde saúde, carinho e bem-estar se encontram
         </motion.h1>
@@ -49,12 +49,13 @@ export function HomeHero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.7 }}
-          className="mt-10 flex flex-wrap gap-4"
+          className="mt-8 flex flex-col gap-3 sm:mt-10 sm:flex-row sm:flex-wrap sm:gap-4"
         >
           <Button
             href={`https://wa.me/${SITE.whatsapp}`}
             external
             size="lg"
+            className="w-full sm:w-auto"
           >
             Agendar atendimento
           </Button>
@@ -63,20 +64,21 @@ export function HomeHero() {
             external
             variant="outline"
             size="lg"
-            className="border-white/40 text-white hover:bg-white hover:text-brand-green"
+            className="w-full border-white/40 text-white hover:bg-white hover:text-brand-green sm:w-auto"
           >
             Como chegar
           </Button>
         </motion.div>
 
-        <motion.p
+        <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8 }}
-          className="mt-8 text-sm text-white/60"
+          className="mt-6 space-y-1 text-sm text-white/60 sm:mt-8"
         >
-          {SITE.address} · {SITE.phone}
-        </motion.p>
+          <p>{SITE.address}</p>
+          <p>{SITE.phone}</p>
+        </motion.div>
       </div>
     </section>
   );

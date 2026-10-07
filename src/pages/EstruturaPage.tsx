@@ -41,12 +41,12 @@ export function EstruturaPage() {
           />
         </div>
         <div className="hero-gradient absolute inset-0" />
-        <div className="relative mx-auto w-full max-w-7xl px-6 pb-16 pt-32 lg:px-8">
+        <div className="relative mx-auto w-full max-w-7xl px-4 pb-14 pt-28 sm:px-6 sm:pb-16 sm:pt-32 lg:px-8">
           <FadeIn>
             <span className="text-xs font-semibold uppercase tracking-[0.25em] text-white/70">
               Nossa estrutura
             </span>
-            <h1 className="mt-3 max-w-2xl text-5xl font-semibold text-white md:text-6xl">
+            <h1 className="mt-3 max-w-2xl text-3xl font-semibold text-white sm:text-4xl md:text-6xl">
               Um espaço pensado para cuidar
             </h1>
             <p className="mt-4 max-w-lg text-lg text-white/75">
@@ -57,9 +57,9 @@ export function EstruturaPage() {
         </div>
       </section>
 
-      <section className="py-24 md:py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="grid auto-rows-[240px] grid-cols-1 gap-5 md:grid-cols-4">
+      <section className="py-16 sm:py-20 md:py-32">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid auto-rows-[200px] grid-cols-1 gap-4 sm:auto-rows-[240px] sm:gap-5 md:grid-cols-4">
             {gallery.map((item, i) => (
               <FadeIn
                 key={item.title}
@@ -80,8 +80,8 @@ export function EstruturaPage() {
             ))}
           </div>
 
-          <FadeIn className="mt-16 rounded-3xl bg-brand-green p-8 text-center text-white md:p-12">
-            <h2 className="text-3xl font-semibold md:text-4xl">
+          <FadeIn className="mt-12 rounded-2xl bg-brand-green p-6 text-center sm:mt-16 sm:rounded-3xl sm:p-8 md:p-12">
+            <h2 className="text-2xl font-semibold text-white sm:text-3xl md:text-4xl">
               Diagnóstico integrado na clínica
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-white/80">
@@ -90,10 +90,7 @@ export function EstruturaPage() {
               precisar buscar resultado em outra cidade.
             </p>
             <div className="mt-8">
-              <Button
-                href="/servicos/exames"
-                className="bg-white text-brand-green hover:bg-brand-cream"
-              >
+              <Button href="/servicos/exames" variant="light" className="w-full sm:w-auto">
                 Conhecer exames
               </Button>
             </div>

@@ -30,7 +30,7 @@ export function SectionHeading({
         </span>
       )}
       <h2
-        className={`text-balance text-4xl md:text-5xl lg:text-6xl ${
+        className={`text-balance text-3xl sm:text-4xl md:text-5xl lg:text-6xl ${
           light ? "text-white" : "text-brand-charcoal"
         }`}
       >
