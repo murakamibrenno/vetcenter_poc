@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-green: #008248;
+  --color-brand-green-dark: #005c33;
+  --color-brand-green-light: #e8f5ec;
+  --color-brand-red: #c62828;
+  --color-brand-blue: #2196f3;
+  --color-brand-orange: #f57c00;
+  --color-brand-cream: #f7f5f0;
+  --color-brand-charcoal: #1a1f1c;
+
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Plus Jakarta Sans", system-ui, sans-serif;
+
+  --font-family-display: var(--font-display);
+  --font-family-body: var(--font-body);
+}
+
+@utility font-display {
+  font-family: var(--font-display);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background: var(--color-brand-cream);
+  color: var(--color-brand-charcoal);
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.grain-overlay::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.04;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 128px 128px;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.ambient-card-gradient {
+  background: linear-gradient(
+    to top,
+    rgba(0, 92, 51, 0.92) 0%,
+    rgba(0, 92, 51, 0.4) 45%,
+    transparent 100%
+  );
+}
+
+.hero-gradient {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 92, 51, 0.88) 0%,
+    rgba(0, 92, 51, 0.55) 50%,
+    rgba(26, 31, 28, 0.35) 100%
+  );
+}
+
+.glass {
+  background: rgba(247, 245, 240, 0.82);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.glass-dark {
+  background: rgba(26, 31, 28, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-brand-cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-green);
+  border-radius: 4px;
+}
